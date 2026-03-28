@@ -1,16 +1,20 @@
 /* Custom Font Setup (Inter) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
+
 :target {
     scroll-margin-top: 100px;
 }
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f7f7; /* Light background for accessibility */
     color: #212529; /* Bootstrap default text color */
 }
+
 /* Gradient background for hero and footer sections */
 .bg-hero {
     background-color: #eceff1;
@@ -18,17 +22,38 @@ body {
     background-size: cover;
     background-position: center; 
 }
+
 .bg-marble {
     background-color: #eceff1;
     background-image: url('images/minimalist-grey-marble-background-web-ui-design-stone-texture-features-sleek-modern-surface-subtle-veining-refined-381709510.webp');
     background-size: cover;
     background-position: center;
 }
-/* New Gallery Styles */
+
+/* --- Navigation Logo Styles --- */
+.navbar-banner-img {
+    /* Increased from 100px to 180px */
+    max-height: 100px; 
+    width: auto;
+    display: block;
+    border: none;
+    border-radius: 0;
+    /* Optional: adds a smooth transition if the bar shrinks on scroll later */
+    transition: max-height 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    .navbar-banner-img {
+        /* Increased from 40px to 80px */
+        max-height: 80px; 
+    }
+}
+
+/* --- Gallery Styles --- */
 .carousel-img {
     width: 100%;
     height: 60vh; /* Slightly taller for better viewing */
-    object-fit: contain; /* This prevents the "zoomed in" look */
+    object-fit: contain; /* Prevents the "zoomed in" look */
     background-color: #111; /* Adds a dark frame for photos of different sizes */
 }
 
@@ -37,27 +62,6 @@ body {
     .carousel-img {
         height: 40vh;
     }
-}
-.navbar-banner-img {
-    max-height: 70px;
-    width: auto;
-    display: block;
-    border-radius: 12px;
-    border: 1px solid rgba(0,0,0,0.1); /* Adds a faint grey outline */
-}
-@media (max-width: 768px) {
-        .navbar-banner-img {
-            max-height: 50px;
-        }
-    }
-/* Custom color definitions (used inline with style attribute when no perfect Bootstrap match exists) */
-/* The primary color in Bootstrap is generally blue, but these specific colors are used for branding */
-/* Primary Blue: #1e3a8a (used for headings/logo text) */
-/* Green Primary: #065f46 (used for some service text) */
-
-/* The following custom scrollbar styles are no longer relevant as the carousel is handled by Bootstrap JS/CSS */
-/* .scroll-hidden::-webkit-scrollbar {
-    display: none;
 }
 .scroll-hidden {
     -ms-overflow-style: none;
