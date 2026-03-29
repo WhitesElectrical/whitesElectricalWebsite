@@ -18,7 +18,7 @@ body {
 /* Gradient background for hero and footer sections */
 .bg-hero {
     background-color: #eceff1;
-    background-image: url('images/main1.jpg');
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center; 
 }
@@ -32,7 +32,6 @@ body {
 
 /* --- Navigation Logo Styles --- */
 .navbar-banner-img {
-    /* Increased from 100px to 180px */
     max-height: 100px; 
     width: auto;
     display: block;
@@ -41,7 +40,32 @@ body {
     /* Optional: adds a smooth transition if the bar shrinks on scroll later */
     transition: max-height 0.3s ease; 
 }
+/* Custom Hero Title Colors */
+.text-electrical {
+    color: #4195da; /* Professional Royal Blue */
+}
 
+.text-security {
+    color: #33dd5b; /* Secure Forest Green */
+}
+
+/* Optional: Subtle text shadow to help it pop against the background image */
+#home h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+footer h4 {
+    color: #33dd5b !important; /* Light Green */
+}
+.footer-fb-icon {
+    color: #1877F2; /* Official Facebook Blue */
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.footer-fb-icon:hover {
+    color: #ffffff; /* Turns white when hovered */
+    transform: scale(1.2); /* Slightly grows when hovered */
+}
 @media (max-width: 768px) {
     .navbar-banner-img {
         /* Increased from 40px to 80px */
@@ -63,7 +87,3 @@ body {
         height: 40vh;
     }
 }
-.scroll-hidden {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-} */
