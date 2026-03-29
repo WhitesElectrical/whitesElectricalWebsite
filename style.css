@@ -68,8 +68,8 @@ footer h4 {
 }
 @media (max-width: 768px) {
     .navbar-banner-img {
-        /* Increased from 40px to 80px */
-        max-height: 80px; 
+        /* Increased from 40px to 50px */
+        max-height: 50px; 
     }
 }
 
