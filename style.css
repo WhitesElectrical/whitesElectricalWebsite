@@ -18,7 +18,7 @@ body {
 /* Gradient background for hero and footer sections */
 .bg-hero {
     background-color: #eceff1;
-    background-image: url('images/hero.jpg');
+    background-image: url('images/hero.webp');
     background-size: cover;
     background-position: center; 
 }
