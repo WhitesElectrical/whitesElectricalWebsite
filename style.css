@@ -73,17 +73,22 @@ footer h4 {
     }
 }
 
-/* --- Gallery Styles --- */
-.carousel-img {
-    width: 100%;
-    height: 60vh; /* Slightly taller for better viewing */
-    object-fit: contain; /* Prevents the "zoomed in" look */
-    background-color: #111; /* Adds a dark frame for photos of different sizes */
+/* Prevents the top of pictures from being cut off */
+.gallery-img {
+    height: 600px; /* You can adjust this height */
+    object-fit: contain; /* Shows the FULL image without cropping */
+    background-color: #1a1a1a; /* Adds a clean dark background to the sides/top of odd-sized photos */
 }
 
-/* Make the gallery height smaller on mobile so it's not too huge */
+/* Mobile height adjustment */
 @media (max-width: 768px) {
-    .carousel-img {
-        height: 40vh;
+    .gallery-img {
+        height: 400px;
     }
+}
+
+/* Optional: Make the carousel background match the image background for a seamless look */
+#simpleCarousel {
+    background-color: #1a1a1a;
+    border-radius: 12px;
 }
