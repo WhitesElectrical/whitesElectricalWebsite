@@ -75,7 +75,7 @@ footer h4 {
 
 /* Prevents the top of pictures from being cut off */
 .gallery-img {
-    height: 600px; /* You can adjust this height */
+    height: 500px; /* You can adjust this height */
     object-fit: contain; /* Shows the FULL image without cropping */
     background-color: #1a1a1a; /* Adds a clean dark background to the sides/top of odd-sized photos */
 }
