@@ -40,6 +40,15 @@ body {
     /* Optional: adds a smooth transition if the bar shrinks on scroll later */
     transition: max-height 0.3s ease; 
 }
+.napit-navbar-img {
+    max-height: 86px;
+    width: auto;
+    display: block;
+}
+
+.navbar-brand img {
+    flex-shrink: 0;
+}
 /* Custom Hero Title Colors */
 .text-electrical {
     color: #4195da; /* Professional Royal Blue */
@@ -68,7 +77,7 @@ footer h4 {
 }
 @media (max-width: 768px) {
     .navbar-banner-img {
-        /* Increased from 40px to 50px */
+        /* Increased from 40px to 80px */
         max-height: 50px; 
     }
 }
